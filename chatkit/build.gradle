@@ -11,7 +11,7 @@ android {
         versionName '0.4.1'
         consumerProguardFiles 'proguard.txt'
     }
-    
+
     android {
         lintOptions {
             abortOnError false
@@ -24,7 +24,7 @@ android {
                 release(MavenPublication) {
                     from components.release
                     groupId = 'com.alexdeww.chatkit'
-                    version = '0.4.2'
+                    version = '0.4.3'
                 }
             }
         }

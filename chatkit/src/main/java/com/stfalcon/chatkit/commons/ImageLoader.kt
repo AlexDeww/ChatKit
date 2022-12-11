@@ -23,6 +23,6 @@ import android.widget.ImageView
 /**
  * Callback for implementing images loading in message list
  */
-interface ImageLoader {
+fun interface ImageLoader {
     fun loadImage(imageView: ImageView, url: String?, payload: Any?)
 }
