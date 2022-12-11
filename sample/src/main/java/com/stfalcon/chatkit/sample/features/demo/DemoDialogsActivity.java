@@ -32,7 +32,7 @@ public abstract class DemoDialogsActivity extends AppCompatActivity
     public void onDialogLongClick(Dialog dialog) {
         AppUtils.showToast(
                 this,
-                dialog.getDialogName(),
+                dialog.getDialogName().toString(),
                 false);
     }
 }

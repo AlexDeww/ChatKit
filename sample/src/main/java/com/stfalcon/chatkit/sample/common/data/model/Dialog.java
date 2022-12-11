@@ -1,8 +1,12 @@
 package com.stfalcon.chatkit.sample.common.data.model;
 
+import androidx.annotation.NonNull;
+
 import com.stfalcon.chatkit.commons.models.IDialog;
+import com.stfalcon.chatkit.commons.models.IUser;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /*
  * Created by troy379 on 04.04.17.
@@ -11,8 +15,8 @@ public class Dialog implements IDialog<Message> {
 
     private String id;
     private String dialogPhoto;
-    private String dialogName;
-    private ArrayList<User> users;
+    private CharSequence dialogName;
+    private List<? extends IUser> users;
     private Message lastMessage;
 
     private int unreadCount;
@@ -39,13 +43,14 @@ public class Dialog implements IDialog<Message> {
     }
 
     @Override
-    public String getDialogName() {
+    public CharSequence getDialogName() {
         return dialogName;
     }
 
+    @NonNull
     @Override
-    public ArrayList<User> getUsers() {
-        return users;
+    public List<IUser> getUsers() {
+        return (List<IUser>) users;
     }
 
     @Override
