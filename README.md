@@ -1,6 +1,6 @@
 # ChatKit for Android
 
-[![](https://jitpack.io/v/stfalcon-studio/Chatkit.svg)](https://jitpack.io/#stfalcon-studio/Chatkit)
+[![](https://jitpack.io/v/AlexDeww/ChatKit.svg)](https://jitpack.io/#AlexDeww/ChatKit)
 
 ChatKit is a library designed to simplify the development of UI for such a trivial task as chat. It has flexible possibilities for styling, customizing and data management
 
@@ -51,11 +51,11 @@ allprojects {
 }
 ```
 2. Add the dependency
-[![](https://jitpack.io/v/stfalcon-studio/Chatkit.svg)](https://jitpack.io/#stfalcon-studio/Chatkit)
+[![](https://jitpack.io/v/AlexDeww/ChatKit.svg)](https://jitpack.io/#AlexDeww/ChatKit)
 ```
 dependencies {
   ...
-  implementation 'com.github.stfalcon-studio:Chatkit:[last_version]'
+  implementation 'com.github.AlexDeww:ChatKit:[last_version]'
 }  
 ```
 
