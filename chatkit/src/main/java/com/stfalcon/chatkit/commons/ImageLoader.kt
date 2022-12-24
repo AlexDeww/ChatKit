@@ -23,6 +23,7 @@ import android.widget.ImageView
 /**
  * Callback for implementing images loading in message list
  */
-fun interface ImageLoader {
-    fun loadImage(imageView: ImageView, url: String?, payload: Any?)
+interface ImageLoader {
+    fun loadAvatar(imageView: ImageView, url: String?, payload: Any?)
+    fun loadMessageImage(imageView: ImageView, url: String?, payload: Any?)
 }
